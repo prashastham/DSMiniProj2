@@ -37,22 +37,9 @@ DSMiniProj2/
 - matplotlib
 - logging (standard library)
 
-## Installation
-
-1. Clone or download this repository
-2. Install required packages:
-   ```bash
-   pip install numpy pandas matplotlib
-   ```
-
-   Or if using conda:
-   ```bash
-   conda install numpy pandas matplotlib
-   ```
-
 ## How to Execute
 
-### Method 1: Run the main script
+### Run the main script
 
 ```bash
 python main.py
@@ -63,26 +50,6 @@ This will:
 2. Calculate mean ERPs for all 5 fingers
 3. Display the shape of the resulting matrix (should be 5x1201)
 4. Generate a figure with 5 subplots showing the mean ERP for each finger
-
-### Method 2: Use as a module
-
-```python
-from fingers_erp import calc_mean_erp
-
-# Calculate mean ERPs
-fingers_erp_mean = calc_mean_erp('data/events_file_ordered.csv', 
-                                  'data/brain_data_channel_one.csv')
-
-# fingers_erp_mean is a 5x1201 numpy array
-print(fingers_erp_mean.shape)  # Output: (5, 1201)
-```
-
-### Method 3: Interactive exploration
-
-Open and run the Jupyter notebook:
-```bash
-jupyter notebook notebooks/ERPSync.ipynb
-```
 
 ## Output
 
@@ -120,11 +87,3 @@ The `calc_mean_erp()` function:
 - The program skips trials where the extracted time window exceeds data boundaries
 - Logging warnings are displayed for out-of-bounds trials or fingers with no valid data
 - Time resolution: Each sample represents 1ms (1201 samples = -200 to +1000ms)
-
-## Author
-
-Data Science Concepts - Mini Project 2
-
-## License
-
-Academic/Educational Use

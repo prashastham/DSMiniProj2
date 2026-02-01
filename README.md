@@ -16,9 +16,8 @@ DSMiniProj2/
 ├── data/                        # Data directory
 │   ├── brain_data_channel_one.csv   # ECoG time series data
 │   └── events_file_ordered.csv      # Movement event timestamps
-├── notebooks/                   # Jupyter notebooks
-│   └── ERPSync.ipynb           # Interactive analysis notebook
-└── __pycache__/                # Python cache files
+└── notebooks/                   # Jupyter notebooks
+    └── ERPSync.ipynb           # Interactive analysis notebook
 ```
 
 ### File Descriptions
